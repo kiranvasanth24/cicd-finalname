@@ -14,16 +14,20 @@ import com.example.demo.Dto.CicdDto;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/orders")
 public class CicdApplication {
 	@Autowired
 	private CicdDao cicdDao;
 	
-	@GetMapping
-	public List<CicdDto> fetchOrders() {
-		return cicdDao.getOrders();
+	/*
+	 * @GetMapping public List<CicdDto> fetchOrders() { return cicdDao.getOrders();
+	 * }
+	 */
+	
+	@GetMapping("/orders")
+	public String show() {
+		return "yes";
 	}
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(CicdApplication.class, args);
 	}
