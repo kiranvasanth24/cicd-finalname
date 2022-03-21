@@ -1,0 +1,4 @@
+com\example\demo\Dao\CicdDao.class
+com\example\demo\Dto\CicdDto.class
+com\example\demo\CicdApplication.class
+com\example\demo\controller\CicdController.class
